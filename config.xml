@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>etimageeditor</name>
+	<displayName><![CDATA[Express Image Manager and Editor]]></displayName>
+	<version><![CDATA[1.1.6]]></version>
+	<description><![CDATA[Feature rich and fastest in-place image manager for Prestashop.]]></description>
+	<author><![CDATA[Express Tech]]></author>
+	<tab><![CDATA[administration]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

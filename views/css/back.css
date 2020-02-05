@@ -1,0 +1,543 @@
+/**
+* 2007-2015 PrestaShop
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/afl-3.0.php
+* If you did not receive a copy of the license and are unable to
+* obtain it through the world-wide-web, please send an email
+* to license@prestashop.com so we can send you a copy immediately.
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+* versions in the future. If you wish to customize PrestaShop for your
+* needs please refer to http://www.prestashop.com for more information.
+*
+*  @author    PrestaShop SA <contact@prestashop.com>
+*  @copyright 2007-2015 PrestaShop SA
+*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+*  International Registered Trademark & Property of PrestaShop SA
+*
+* Don't forget to prefix your containers with your own identifier
+* to avoid any conflicts with others containers.
+*/
+
+.ie_wrapper {
+	height: calc(100vh - 250px);
+	/*box-shadow: inset 0 0 5px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);*/
+}
+.ie_wrapper .ie_left_pane {
+	width: 30%;
+	float: left;
+	height: 100%;
+	padding: 8px;
+	    background-color: #fff;
+    border: 1px solid #ddd;
+    /*padding-right: 10px;*/
+	/*overflow-y: scroll;*/
+	/*box-shadow: inset 0 0 5px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);*/
+}
+
+.ie_search_right_tools {
+	padding: 0px 5px !important;
+    background: none !important;
+    border: none !important;
+}
+
+#ie_settings {
+	display: none;
+	padding: 5px;
+}
+
+.ie_settings_head {
+	font-weight: bold;
+}
+
+.bootstrap.panel {
+	display: none;
+}
+
+.ie_wrapper .ie_right_pane {
+	width: 70%;
+	height: 100%;
+	padding-left: 5px;
+	float: right;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding-bottom: 15px;
+	/*box-shadow: inset 0 0 5px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);*/
+}
+
+.ie_item_hidden {
+	display: none;
+}
+
+.ie_right_img {
+	height: 100%
+}
+
+.ie_search_txt {
+	padding: 2px;
+	margin: 2px;
+	/*position: fixed;*/
+	/*margin-bottom: 30px;*/
+}
+
+.clearfloat {
+	clear:both;
+}
+
+.ie_item_wrapper {
+	/*margin-bottom: 5px;*/
+	cursor: pointer;
+	border-bottom: 1px solid #dedbdb;
+	padding: 3px;
+}
+
+.ie_gallery_img_wrapper  {
+	cursor: pointer;;
+	height: 200px;
+    text-align: center;
+
+    padding-bottom: 10px;
+}
+
+.ie_gallery_img_wrapper div {
+	height: 100%;
+	width: 100%;
+}
+
+.ie_gallery_img_wrapper img {
+	/*height: 98%;*/
+    /*width: auto;*/
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /*background: url('../img/spinner3.gif') no-repeat;
+    background-attachment: fixed;
+    background-position: center; */
+    display: none;
+}
+
+.ie_gallery_img_wrapper.loading svg {
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 4px;
+}
+
+.ie_gallery_img, .ie_gallery_new_image {
+	width: 100%
+}
+
+.ie_gallery_new_image {
+	/*back*/
+	border: 1px dashed #dedbdb;
+	border-spacing: 3;
+	border-radius: 10%;
+	/*border-style: dashed;*/
+	height: 195px;
+	background-color: transparent !important;;
+}
+
+.ie_product_tools span {
+	margin-right: 5px;
+	margin-top:12px
+}
+
+.ie_product_tools {
+	display: none;
+}
+
+.ie_add_product_image:hover,
+.ie_product_link:hover {
+	/*margin-top: -2px;*/
+	    box-shadow: inset 0 0 5px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.ie_item_wrapper:hover .ie_product_tools,
+.ie_item_wrapper.active .ie_product_tools {
+	display: block;
+}
+
+.ie_loading_img {
+	background-image: url('../img/spinner3.gif');
+    background-size: 48px;
+    height: 48px !important;
+    max-width: 48px;
+    max-height: 48px;
+   
+    z-index: 9999;
+    position: absolute;
+    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.ie_cover_img {
+	/*background-image: url('../img/spinner3.gif');
+    background-size: 48px;*/
+    height: 48px !important;
+    max-width: 48px;
+    max-height: 48px;
+   
+    z-index: 9999;
+    position: absolute;
+    text-align: left;
+    top: 10px;
+    /*bottom: 0;*/
+    left: 10px;
+    /*right: 0;*/
+    /*margin: auto;*/
+
+}
+
+.ie_cover_img span {
+	color: #07b707;
+    border: 1px solid #07b707;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.ie_item_wrapper:hover {
+	background-color: #f5f5f5;
+}
+
+.ie_item_wrapper.active {
+	background-color: #f5f5f5;
+}
+
+.ie_item_img {
+	width: 40px;
+	margin-right: 5px;
+	padding: 5px;
+	
+}
+
+.ie_right_btn {
+	text-align: right;
+    margin-bottom: 5px;
+}
+
+.ie_gallery_img_tools {
+	position: absolute;
+    left: 0px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    bottom: 12px;
+    display: none;
+    -webkit-animation: fadeInUp 0.1s 0.1s ease both;
+    -moz-animation: fadeInUp 0.1s 0.1s ease both;
+    -ms-animation: fadeInUp 0.1s 0.1s ease both;
+    -o-animation: fadeInUp 0.1s 0.1s ease both;
+    animation: fadeInUp 0.1s 0.1s ease both;
+}
+
+.ie_gallery_img_wrapper:hover .ie_gallery_img_tools {
+	display: block;;
+}
+
+.ie_gallery_img_tools span {
+	margin-right: 5px;
+}
+
+.ie_gallery_img_tools span:hover {
+	background-color: #eee;
+}
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  /*height: 300px;*/
+  /*margin: 1rem;*/
+  position: relative;
+  /*width: 300px;*/
+}
+
+.card-round {
+	border-radius: 50%;
+	padding: 5px;
+	width: 24px;
+    height: 24px;
+}
+
+.ie_left_pane .list {
+	overflow-y: auto;
+    /*height: 100%;*/
+
+}
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-2 {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.card-3 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.card-4 {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-5 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.avpw_powered_text {
+	display: none;
+}
+
+
+
+
+
+
